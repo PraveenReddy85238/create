@@ -1,7 +1,6 @@
-
+### register API 1
 POST http://localhost:3000/register
-
-content-type : application/json
+content-type : "application/json
 
 {
   "username": "adam_richard",
@@ -9,4 +8,25 @@ content-type : application/json
   "password": "richard_567",
   "gender": "male",
   "location": "Detroit"
+}
+
+### login API 2
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+
+### change password API 3
+
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
 }
